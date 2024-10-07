@@ -1,0 +1,441 @@
+{
+    // VIM
+    "vim.camelCaseMotion.enable": true,
+    "vim.useSystemClipboard": true,
+    "vim.leader": " ",
+    "vim.handleKeys": {
+        "<C-x>": true, //decrease number
+        "<C-a>": true, //increase number
+        "<C-d>": true, //go down
+        "<C-u>": true, //go up
+        "<C-v>": true, //cube selection
+        "<C-c>": true,
+        "<C-f>": false,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-y>": false
+    },
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "C-Space"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "C-c"
+            ],
+            "after": [
+                "y",
+            ]
+        },
+        //EASY MOTION
+        {
+            "before": [
+                "leader",
+                "/"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "leader",
+                "j"
+            ]
+        },
+        //EDITORS (TABS)
+        {
+            "before": [
+                "leader",
+                "b"
+            ],
+            "commands": [
+                "workbench.action.showAllEditorsByMostRecentlyUsed"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        // SPLIT SIZES
+        {
+            "before": [
+                "leader",
+                "="
+            ],
+            "commands": [
+                "workbench.action.increaseViewWidth"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "-"
+            ],
+            "commands": [
+                "workbench.action.decreaseViewWidth"
+            ]
+        },
+        // MISC
+        {
+            "before": [
+                "v",
+                "i",
+                "t"
+            ],
+            "after": [
+                "v",
+                "i",
+                "<"
+            ] //choose inside template instead html tag (c++)
+        },
+        //FOCUSES
+        {
+            "before": [
+                "leader",
+                "f",
+                "o"
+            ],
+            "commands": [
+                "outline.focus"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "e"
+            ],
+            "commands": [
+                "workbench.explorer.fileView.focus"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "g"
+            ],
+            "commands": [
+                "workbench.scm.focus"
+            ],
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "m"
+            ],
+            "commands": [
+                "bookmarksExplorer.focus"
+            ],
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "c"
+            ],
+            "commands": [
+                "workbench.panel.chat.view.copilot.focus"
+            ],
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "x"
+            ],
+            "commands": [
+                "workbench.views.extensions.installed.focus"
+            ]
+        },
+        // CLOSE EDITORS
+        {
+            "before": [
+                "leader",
+                "c",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "C-q",
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "c",
+                "o"
+            ],
+            "commands": [
+                "workbench.action.closeOtherEditors"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "c",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.closeEditorsToTheRight"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "c",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.closeEditorsToTheLeft"
+            ]
+        },
+        // SPLIT EDITORS
+        {
+            "before": [
+                "leader",
+                "s",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.splitEditorDown"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "s",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.splitEditorRight"
+            ]
+        },
+        // MOVE EDITORS
+        {
+            "before": [
+                "leader",
+                "m",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.moveEditorLeftInGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.moveEditorRightInGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.moveEditorDownInGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.moveEditorUpInGroup"
+            ]
+        },
+        // LINE HOME and END
+        {
+            "before": [
+                "leader",
+                "h"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "l"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        // BOOKMARKS
+        {
+            "before": [
+                "m"
+            ],
+            "commands": [
+                "bookmarks.toggle"
+            ]
+        },
+        {
+            "before": [
+                "M"
+            ],
+            "commands": [
+                "bookmarks.toggleLabeled"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "j"
+            ],
+            "commands": [
+                "bookmarks.jumpToNext"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "k"
+            ],
+            "commands": [
+                "bookmarks.jumpToPrevious"
+            ]
+        },
+        // CONTEXT MENU. use microsoft power toys to change win-j and win-k to down and up arrows
+        {
+            "before": [
+                "leader",
+                "leader"
+            ],
+            "commands": [
+                "editor.action.showContextMenu"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ">"
+            ],
+            "after": [
+                ">",
+                "g",
+                "v"
+            ]
+        },
+        {
+            "before": [
+                "C-c"
+            ],
+            "after": [
+                "y",
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "after": [
+                "<",
+                "g",
+                "v"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "leader"
+            ],
+            "commands": [
+                "editor.action.showContextMenu"
+            ]
+        },
+        //GIT
+        {
+            "before": [
+                "leader",
+                "g",
+                "s"
+            ],
+            "commands": [
+                "git.stageSelectedRanges"
+            ],
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "u"
+            ],
+            "commands": [
+                "git.unstageSelectedRanges"
+            ],
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "e"
+            ],
+            "commands": [
+                "github.copilot.interactiveEditor.explain"
+            ],
+        }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "Esc"
+            ]
+        }
+    ],
+    "workbench.colorTheme": "Hacker X - Orange Hacker Theme",
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "Consolas, 'Courier New', monospace, BigBlueTermPlusNerdFont-Regular, 'Hack Nerd Font'",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "cmake.showOptionsMovedNotification": false,
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "editor.lineNumbers": "relative",
+    "glassit.alpha": 240,
+}
