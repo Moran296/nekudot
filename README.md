@@ -118,5 +118,9 @@ after all other keys
 Seems that currently vscode does not allow improting from different json files so..
 Just copy the contents of vscode/settings.json and vscode/keybindings.json to .config/Code/User/...
 
-
+## Powerlevel10k
+- install powerline and nerd fonts
+- `sudo apt-get install fonts-powerline`
+- clone repo `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
+- source zsh with the theme `ZSH_THEME="powerlevel10k/powerlevel10k"`
 
