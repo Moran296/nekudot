@@ -120,7 +120,6 @@ def find_obscured_windows(windows):
 # Find the next window in the given direction
 def find_next_window(direction, windows, current_win):
     obscured = find_obscured_windows(windows)
-    print(obscured)
 
     current_x, current_y = current_win["x"], current_win["y"]
     if direction == 'left':
