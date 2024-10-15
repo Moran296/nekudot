@@ -182,7 +182,7 @@ def check_wmctrl_installed():
         sys.exit(1)
 
 if __name__ == "__main__":
-    check_wmctrl_installed()
+    # check_wmctrl_installed()
     direction = "left"
 
     if len(sys.argv) >= 2:
