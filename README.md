@@ -28,6 +28,8 @@
 ### tmux
 - tpm needs to be installed with `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - in ~/.tmux.conf add line `source-file ~/nekudot/.tmux.conf`
+- ctrl + hjkl are for panes
+- ctrl + shift + hl are for windows
 
 ### xbindkeys
 XbindKeys does not have a source command like other dotfiles so you need to create a a file manually and add the required commands
