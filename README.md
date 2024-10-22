@@ -118,3 +118,7 @@ Just copy the contents of vscode/settings.json and vscode/keybindings.json to .c
 - clone repo `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
 - source zsh with the theme `ZSH_THEME="powerlevel10k/powerlevel10k"`
 
+## Other commands to run
+- `git config --global core.editor vi`
+- `sudo apt insall xsel` - (for tmux yank)
+
