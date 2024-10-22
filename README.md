@@ -127,3 +127,9 @@ Just copy the contents of vscode/settings.json and vscode/keybindings.json to .c
 - clone repo `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
 - source zsh with the theme `ZSH_THEME="powerlevel10k/powerlevel10k"`
 
+## WEZTERM
+- install wezterm
+    - several ways, one is to add a gpg key and repo for it and use apt install or download a binary
+- add `.wezterm.lua` file in the user folder and inside  just add this:
+- `dofile('/home/<user>/nekudot/.wezterm.lua')`
+- this should be enough. wallpapers can be added in wallpaper folder
