@@ -52,16 +52,8 @@ XbindKeys does not have a source command like other dotfiles so you need to crea
 
 ## SCRIPTS:
 
-### py_focus.py
-Use shortcut to move between windows that are not minimized across the same desktop
-- add following shirtcuts in settings -> keyboard shortcuts
-	- focus right
-	- nohup python3 /home/user/nekudot/py_focus.py right > /dev/null 2>&1 &
-	- SUPER + L
-
-	- focus left
-	- nohup python3 /home/user/nekudot/py_focus.py left > /dev/null 2>&1 &
-	- SUPER + H
+### WinFoc
+- clone WinFoc, build and follow instructions for SUPER +H\L
 
 
 ## COPYQ
