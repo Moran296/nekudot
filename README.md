@@ -14,6 +14,15 @@
 - wmctrl
 - copyq
 
+## Other commands to run
+- `git config --global core.editor vi`
+- `sudo apt insall cmake vim gnome-tweaks gnome-shell-extensions fzf tmux xsel tig fonts-powerline gh`
+- `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` for rust
+- `git clone https://github.com/Moran296/WinFoc.git`
+- `cargo install exa`
+- `cargo install onefetch`
+- `cargo install binsider`
+
 ## DOTS
 
 ### zsh
@@ -117,8 +126,4 @@ Just copy the contents of vscode/settings.json and vscode/keybindings.json to .c
 - `sudo apt-get install fonts-powerline`
 - clone repo `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
 - source zsh with the theme `ZSH_THEME="powerlevel10k/powerlevel10k"`
-
-## Other commands to run
-- `git config --global core.editor vi`
-- `sudo apt insall xsel` - (for tmux yank)
 
