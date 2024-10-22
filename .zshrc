@@ -25,27 +25,27 @@ alias ll='exa -la' # long, all
 alias open='xdg-open'
 xbindkeys
 
-function gitpull() { echo "git pull"; git pull; zle reset-prompt; zle redisplay}
+function gitpull() { echo "git pull"; git pull}
 zle -N gitpull
 bindkey '^gp' gitpull
 
-function gitcheckout() { echo "git checkout ."; git checkout .; zle reset-prompt; zle redisplay}
+function gitcheckout() { echo "git checkout ."; git checkout .}
 zle -N gitcheckout
 bindkey '^g.' gitcheckout
+
+function gitstatus() { echo "git status"; git status}
+zle -N gitstatus
+bindkey '^gs' gitstatus
 
 function gitdiff() { echo "git diff"; git diff; zle reset-prompt; zle redisplay}
 zle -N gitdiff
 bindkey '^gd' gitdiff
 
-function gitstatus() { echo "git status"; git status; zle reset-prompt; zle redisplay}
-zle -N gitstatus
-bindkey '^gs' gitstatus
-
-function gitshow() { echo "git show"; git show; zle reset-prompt; zle redisplay}
+function gitshow() { echo "git show"; git show; zle reset-prompt}
 zle -N gitshow
 bindkey '^gh' gitshow
 
-function gitlog() { echo "git log --oneline"; git log --oneline; zle reset-prompt; zle redisplay}
+function gitlog() { echo "git log --oneline"; git log --oneline; zle reset-prompt}
 zle -N gitlog
 bindkey '^gl' gitlog
 
