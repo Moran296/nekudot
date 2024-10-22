@@ -7,19 +7,19 @@ wezterm.on('window-resized', function(window, pane)
 	local window_height = window:get_dimensions().pixel_height
 	if window_width > window_height then
 		-- landscape
-		overrides.window_background_image = './wallpapers/tuhua_wide.jpg'
+		overrides.window_background_image = './nekudot/wallpapers/tuhua_wide.jpg'
 	else
 		-- portrait
-		overrides.window_background_image = './wallpapers/tuhua_long.jpg'
+		overrides.window_background_image = './nekudot/wallpapers/tuhua_long.jpg'
 	end
 
   window:set_config_overrides(overrides)
   end)
 
  config.window_background_image_hsb = {
-   brightness = 0.03,
+   brightness = 0.025,
    hue = 1.0,
-   saturation = 0.1,
+   saturation = 0.6,
 }
 
 
