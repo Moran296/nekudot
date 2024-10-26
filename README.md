@@ -133,3 +133,27 @@ Just copy the contents of vscode/settings.json and vscode/keybindings.json to .c
 - add `.wezterm.lua` file in the user folder and inside  just add this:
 - `dofile('/home/<user>/nekudot/.wezterm.lua')`
 - this should be enough. wallpapers can be added in wallpaper folder
+
+## YAZI
+- install dependencies
+    - zoxide
+        - `curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh`
+        - create symlink or add ~/.local/bin/ to path
+        - symlink: `sudo ln -s /home/USER/.local/bin/zoxide /usr/bin/zoxide`
+        - make sure .zshrc has `eval "$(zoxide init zsh)"`
+    - fd
+        - `sudo apt install fd-find`
+        - make sure that fd does not exist and then`sudo ln -s /usr/bin/fdfind /usr/bin/fd`
+    - fzf
+        - make sure it exists
+        - can be installed from apt (apt install fzf)
+    - nerd-fonts
+    - other optional
+        - ripgrep (apt)
+        - jq (for json preview - apt)
+        - ffmpegthumbnailer (for video thumnail preview - apt)
+        - poppler (?)
+
+- install yazi from cargo
+    - `rustup update`
+    - `cargo install --locked yazi-fm yazi-cli`

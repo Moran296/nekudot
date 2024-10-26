@@ -54,6 +54,8 @@ bindkey '^[|' zsh_gh_copilot_explain  # bind Alt+shift+\ to explain
 bindkey '^[\' zsh_gh_copilot_suggest  # bind Alt+\ to suggest
 eval "$(gh copilot alias -- zsh)"
 
+eval "$(zoxide init zsh)"
+
 set editing-mode emacs
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
