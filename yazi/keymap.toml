@@ -2,3 +2,8 @@
 on   = "<Esc>"
 run  = "close"
 desc = "Cancel input"
+
+[[manager.prepend_keymap]]
+on   = "!"
+run  = 'shell "$SHELL" --block --confirm'
+desc = "Open shell here"
