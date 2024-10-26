@@ -54,7 +54,13 @@ bindkey '^[|' zsh_gh_copilot_explain  # bind Alt+shift+\ to explain
 bindkey '^[\' zsh_gh_copilot_suggest  # bind Alt+\ to suggest
 eval "$(gh copilot alias -- zsh)"
 
+# zoxide
 eval "$(zoxide init zsh)"
+
+# yazi
+export YAZI_CONFIG_HOME="$(dirname ${(%):-%N})/yazi"
+
+
 
 set editing-mode emacs
 
