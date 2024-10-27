@@ -23,6 +23,9 @@
 - `cargo install onefetch`
 - `cargo install binsider`
 
+## Gnome extensions
+- highlight focus - (https://extensions.gnome.org/extension/4699/highlight-focus/)
+
 ## DOTS
 
 ### zsh
@@ -32,13 +35,14 @@
 	- git
 	- github, github copilot (follow docs)
 	- exa (installed with cargo)
-	- tmux
+	- tmux (installed with snap)
 
 ### tmux
+- install new version of tmux (>= 3.5). it is possible with snap! with `snap install tmux --classic`
 - tpm needs to be installed with `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - in ~/.tmux.conf add line `source-file ~/nekudot/.tmux.conf`
 - ctrl + hjkl are for panes
-- alt + right/left are for windows
+- prefix + hl are for windows
 
 ### xbindkeys
 XbindKeys does not have a source command like other dotfiles so you need to create a a file manually and add the required commands
