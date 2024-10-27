@@ -1,6 +1,8 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
+config.default_prog = { '/usr/bin/zsh' }
+
 wezterm.on('window-resized', function(window, pane)
 	local overrides = window:get_config_overrides() or {}
 	local window_width = window:get_dimensions().pixel_width

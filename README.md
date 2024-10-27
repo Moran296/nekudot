@@ -6,7 +6,7 @@
 ## requirements
 - python
 - zsh
-- fzf
+- fzf (make sure to install new version)
 - rust
 - xdotools
 - xbindkeys

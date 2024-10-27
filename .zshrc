@@ -16,9 +16,6 @@ export LANG=en_IN.UTF-8
 
 source $ZSH/oh-my-zsh.sh
 
-source /usr/share/doc/fzf/examples/completion.zsh
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-
 alias ls='exa' # just replace ls by exa and allow all other exa arguments
 alias l='exa -lbF' #   list, size, type
 alias ll='exa -la' # long, all
@@ -56,6 +53,9 @@ eval "$(gh copilot alias -- zsh)"
 
 # zoxide
 eval "$(zoxide init zsh)"
+
+# fzf
+source <(fzf --zsh)
 
 # yazi
 export YAZI_CONFIG_HOME="$(dirname ${(%):-%N})/yazi"
