@@ -12,7 +12,7 @@ wezterm.on('window-resized', function(window, pane)
 		overrides.window_background_image = './nekudot/wallpapers/tuhua_wide.jpg'
 	else
 		-- portrait
-		overrides.window_background_image = './nekudot/wallpapers/tuhua_long.jpg'
+		overrides.window_background_image = './nekudot/wallpapers/tuhua_long_mountains.jpg'
 	end
 
   window:set_config_overrides(overrides)
