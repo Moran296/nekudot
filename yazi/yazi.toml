@@ -1,3 +1,31 @@
 [manager]
 show_hidden = false
 linemode = "size_and_mtime"
+
+[opener]
+run-script = [
+    { run = 'bash "$@"', block = true, desc = "run", for = "unix" }
+]
+edit = [
+    { run = 'vim "$@"', block = true, desc = "vim", for = "unix" }
+]
+reveal = [
+    { run = 'xdg-open "$(dirname "$1")"', desc = "reveal", for = "unix" }
+]
+code = [
+    { run = 'code "$@"', desc = "code", for = "unix" }
+]
+py = [
+    { run = 'python3 "$@"', desc = "python", for = "unix" }
+]
+
+[open]
+prepend_rules = [
+    { name = "*.sh", use = ["edit", "run-script", "code", "reveal"] },
+    { name = "*.cpp", use = ["edit", "code", "reveal"] },
+    { name = "*.hpp", use = ["edit", "code", "reveal"] },
+    { name = "*.c", use = ["edit", "code", "reveal"] },
+    { name = "*.h", use = ["edit", "code", "reveal"] },
+    { name = "*.py", use = ["edit", "py", "code", "reveal"] },
+    { name = "*.json", use = ["edit", "code", "reveal"] },
+]

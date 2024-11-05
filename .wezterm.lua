@@ -19,7 +19,7 @@ wezterm.on('window-resized', function(window, pane)
   end)
 
  config.window_background_image_hsb = {
-   brightness = 0.025,
+   brightness = 0.035,
    hue = 1.0,
    saturation = 0.6,
 }
@@ -30,6 +30,7 @@ wezterm.on('window-resized', function(window, pane)
 config.color_scheme = 'Catppuccin Frappe'
 config.font_size = 12.5  -- Adjust font size for better readability
 
+config.warn_about_missing_glyphs = false
 
 
 return config

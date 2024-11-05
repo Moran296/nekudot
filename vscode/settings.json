@@ -437,5 +437,5 @@
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "editor.lineNumbers": "relative",
-    "glassit.alpha": 240,
+    "glassit.alpha": 255
 }

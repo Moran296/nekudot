@@ -110,10 +110,6 @@
         "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus && !hasOtherSuggestions && !hasSnippetCompletions && !inSnippetMode && !suggestWidgetVisible && editorLangId == 'markdown'"
     },
     {
-        "key": "f7",
-        "command": "python.execInTerminal-icon"
-    },
-    {
         "key": "ctrl+p",
         "command": "-workbench.action.quickOpen"
     },
